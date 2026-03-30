@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:15
+    container_name: fastfeet_db
+    environment:
+      POSTGRES_USER: fastfeet
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: fastfeet
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
