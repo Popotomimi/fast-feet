@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                  // Versão do JavaScript gerado
+    "module": "CommonJS",                // Módulo padrão para Node.js
+    "rootDir": "./src",                  // Pasta onde ficam os arquivos .ts
+    "outDir": "./dist",                  // Pasta de saída dos arquivos compilados
+    "strict": true,                      // Ativa verificações rigorosas de tipo
+    "esModuleInterop": true,             // Permite importar módulos CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                // Ignora checagem de tipos em libs
+    "resolveJsonModule": true,           // Permite importar arquivos .json
+    "experimentalDecorators": true,      // Necessário para TypeORM (decorators)
+    "emitDecoratorMetadata": true        // Necessário para TypeORM (metadata dos decorators)
+  },
+  "include": ["src"],                    // Inclui apenas a pasta src
+  "exclude": ["node_modules", "dist"]    // Exclui node_modules e dist
+}

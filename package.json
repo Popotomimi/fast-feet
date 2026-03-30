@@ -1,0 +1,32 @@
+{
+  "name": "fast-feet",
+  "version": "1.0.0",
+  "description": "API para uma transportadora",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "Roberto",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
